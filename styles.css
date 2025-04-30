@@ -1,3 +1,11 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --slate-300: hsl(212, 45%, 89%);
+  --slate-500: hsl(216, 15%, 48%);
+  --slate-900: hsl(218, 44%, 22%);
+  --link-color: hsl(228, 45%, 44%);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,7 +13,7 @@
 }
 body {
   font-family: "Outfit", sans-serif;
-  background-color: hsl(212, 45%, 89%);
+  background-color: var(--slate-300);
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -21,7 +29,7 @@ body {
   justify-content: center;
   text-align: center;
   border-radius: 20px;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .qr-code-container img {
@@ -29,14 +37,14 @@ body {
   border-radius: 10px;
 }
 .description p {
-  color: hsl(216, 15%, 48%);
+  color: var(--slate-500);
 }
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--link-color);
 }
 .p-2 {
   padding: 16px;
